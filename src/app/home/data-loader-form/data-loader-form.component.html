@@ -1,0 +1,10 @@
+<form [formGroup]="form" (ngSubmit)="onFormSubmitHandler()">
+  <div class="input">
+    <label for="url">Посилання на джерело данних:</label>
+    <input formControlName="url" name="url" name="URL" type="text" id="url">
+    <div class="error" *ngIf="form.controls['url'].dirty && form.controls['url'].invalid">Ввердіть валідний URL</div>
+  </div>
+  <div class="actions">
+    <button type="submit" [disabled]="form.invalid">Завантажити даннi в таблицю </button>
+  </div>
+</form>

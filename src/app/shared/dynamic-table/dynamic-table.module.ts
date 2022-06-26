@@ -7,8 +7,6 @@ import { DynamicTableCellHeaderComponent } from './cells/dynamic-table-cell-head
 import { DynamicTableCellDefaultComponent } from './cells/dynamic-table-cell-default/dynamic-table-cell-default.component';
 import { DynamicTableRowsSelectorComponent } from './dynamic-table-rows-selector/dynamic-table-rows-selector.component';
 
-
-
 @NgModule({
   declarations: [
     DynamicTableComponent,

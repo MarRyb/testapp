@@ -1,3 +1,5 @@
 <h1>Hello, world!</h1>
-
-<app-dynamic-table></app-dynamic-table>
+<hr />
+<app-data-loader-form (dataLoadedHandler)="onDataChangedHandler($event)"></app-data-loader-form>
+<hr />
+<app-dynamic-table [data]="data"></app-dynamic-table>
